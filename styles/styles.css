@@ -68,3 +68,21 @@ p{
 #Experience{
   padding-top: 20px;
 }
+
+#Experience_Accordion > .accordion-item{
+  background-color: #D4D4B6;
+}
+
+.accordion-button:hover{
+  background-color: #D5F5E3;
+}
+
+/* Projects section */
+
+#Projects{
+  background-color: #fff;
+}
+
+#Projects > .btn{
+  padding: 10px;
+}

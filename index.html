@@ -29,6 +29,7 @@
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" style="padding: 0 0 0 10%">
 
           <a class="navbar-brand" href="#">Mike's Portfolio</a>
+          <div class="container-fluid Nav-Bar">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -58,7 +59,7 @@
               </ul>
             </div>
 
-
+          </div>
 
         </nav>
 
@@ -78,6 +79,7 @@
     </div>
 <!-- Add learned languages, front and backend, and current skill level -->
     <div id="Skills">
+      <h2>Web Development Skills</h2>
       <div class="container-fluid">
         <div class="row">
           <div class="col-xxl-4 col-lg-6 col-sm-12 skills-grid">
@@ -108,52 +110,104 @@
     </div>
 <!-- Add an ACCORDION component for each experience (Job, project, mentorship, etc) had, also a Badge component for current job -->
     <div id="Experience">
+      <h2>Projects and Experience</h2>
       <div class="container-fluid">
-        <div class="accordion" id="accordionExample">
+        <div class="accordion" id="Experience_Accordion">
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingOne">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-        Accordion Item #1
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+      QR Web Page <span class="badge badge-secondary">Now Viewing</span></h2>
       </button>
     </h2>
-    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#Experience_Accordion">
       <div class="accordion-body">
-        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+        <p>Created a simple <strong>QR Code webpage</strong>, using the website FrontEnd Mentor, where it simulates real client requirements.</p>
       </div>
     </div>
   </div>
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingTwo">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        Accordion Item #2
+        TinDog <span class="badge badge-secondary">Now Viewing</span></h2>
       </button>
     </h2>
-    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#Experience_Accordion">
       <div class="accordion-body">
-        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+        <p>Udemy website challenge, where it tested knowledge using HTML and CSS and a bit of Bootstrap.</p>
       </div>
     </div>
   </div>
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingThree">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-        Accordion Item #3
+        CV webpage (Beta) <span class="badge badge-secondary">Now Viewing</span></h2>
       </button>
     </h2>
-    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#Experience_Accordion">
       <div class="accordion-body">
-        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+        <p>Webpage created from myself, applying every skill obtained thus far. Has info about myself and also some of my other skills obtained in my professional life.</p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingFour">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+        Software Quality Assurance <span class="badge badge-secondary">Now Viewing</span></h2>
+      </button>
+    </h2>
+    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#Experience_Accordion">
+      <div class="accordion-body">
+        <p>Not a project, but, developed most of my experience and knowledge about Software and their methodologies.</p>
       </div>
     </div>
   </div>
 </div>
 
+
       </div>
 
     </div>
+    <a href="#"></a>
 <!-- Add carousel with Crossfade animation, for each item a screenshot of the website, name, summary, code and live site. Also include packages/technologies used in the project. Picture will also go to the livesite. -->
     <div id="Projects">
       <div class="container-fluid">
+        <div id="carousel-Projects" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner" >
+
+            <div class="carousel-item active">
+              <h3>QR Code</h3>
+              <p><a href="https://mikeangel2.github.io/Challenges/"><image src="images/QR-CODE.png" alt="QR-Code" width="700px" height="700px"></image></a></p>
+              <em>FrontEnd Mentor Challenge</em>
+              <p>Simple webpage, from FrontEnd Mentor, where meeting requirements is a must. Only HTML and CSS applied</p>
+              <p><a href="https://mikeangel2.github.io/Challenges/"><button type="button" class="btn btn-success btn-sm">Live Site</button></a><a href="https://github.com/MikeAngel2/Challenges"><button type="button" class="btn btn-warning btn-sm">Code</button></a> </p>
+            </div>
+
+            <div class="carousel-item">
+              <h3>TinDog</h3>
+              <p><a href="https://mikeangel2.github.io/TinDog/"><image src="images/TinDog.png" alt="TinDog" width="700px" height="700px"></image></a></p>
+              <em>Udemy Challenge (Not a real app!!)</em>
+              <p>Udemy Challenge website, used knowledge taught during sessions. Bootstrap, CSS and HTML applied here</p>
+              <p><a href="https://mikeangel2.github.io/TinDog/"><button type="button" class="btn btn-success btn-sm">Live Site</button></a><a href="https://github.com/MikeAngel2/TinDog"><button type="button" class="btn btn-warning btn-sm">Code</button></a> </p>
+            </div>
+
+            <div class="carousel-item">
+              <h3>CV Beta</h3>
+              <p><a href="https://mikeangel2.github.io/CV/"><img  src="images/CV_Beta.png" alt="CV" width="700px" height="700px"></a></p> 
+              <em>1st independent project</em>
+              <p>First CV designed by me, using everything learned so far (HTML, CSS, Bootstrap and basic Javascript)</p>
+              <p><a href="https://mikeangel2.github.io/CV/"><button type="button" class="btn btn-success btn-sm">Live Site</button></a><a href="https://github.com/MikeAngel2/CV/tree/master"><button type="button" class="btn btn-warning btn-sm">Code</button></a> </p>
+            </div>
+
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel-Projects" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel-Projects" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
 
       </div>
 
