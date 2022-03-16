@@ -86,3 +86,26 @@ p{
 #Projects > .btn{
   padding: 10px;
 }
+
+/* Education section */
+
+li{
+  margin: 0 0 3px 0;
+}
+
+.list-group-item-action, .list-group-item{
+  background-color: #D0D0D0;
+  border: none;
+
+}
+
+.Education_list{
+position: absolute;
+}
+
+.Education_Projects{
+  width: 65em;
+  height: 180px;
+  overflow: scroll;
+  margin: 0 0 0 200px;
+}
