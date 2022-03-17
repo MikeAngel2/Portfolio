@@ -21,7 +21,14 @@
   <link rel="stylesheet" href="styles/styles.css">
 
   <!-- Javascript section -->
-
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popunder"]'))
+      var popoverList = popoverTriggerList.map(function(popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl)
+      })
+    });
+  </script>
 
 
 </head>
@@ -78,7 +85,7 @@
         <p>Hi everyone that can see my page! I hope that you can find my page
           as readable as i do.</p>
         <p><a href="images/Miguel_Ruiz_CV.pdf" download><button type="button" class="btn btn-dark button_Quick_Intro" href="images/Miguel_Ruiz_CV.pdf" download="Miguel_Ruiz_CV">Download CV</button></a>
-          <button type="button" class="btn btn-dark button_Quick_Intro" href="#Contact_Me">Contact me</button>
+        <a href="#Contact_Me"><button type="button" class="btn btn-dark button_Quick_Intro">Contact me</button></a>
         </p>
       </div>
 
@@ -241,7 +248,7 @@
           </ul>
 
         </div>
-        <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="Education_Projects card" tabindex="0" style="position:relative;">
+        <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="Education_Projects card" tabindex="0">
           <span id="list-item-1"></span>
           <ul class=" list-group list-group-flush">
             <li class="list-group-item">
@@ -269,34 +276,56 @@
                 <li>HTML, CSS, Javascript (Basic)</li>
               </ul>
             </li>
-
           </ul>
-
-
-
         </div>
-
-
-
       </div>
-
-
     </div>
     <!-- Any bootstrap component to tell something about myself (Recommended collapse, model or popover(Advanced)) -->
     <div id="About_Me">
       <div class="container-fluid">
+        <h2>About me</h2>
+
+        <img class="image-profile" src="images/Image_profile.jpg" alt="photo" style="padding: 0 50px 0 0;">
+
+
+        <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popunder" title="Personal Life" data-bs-placement="left"
+          data-bs-content="28 yo, from Delicias, to Juarez City, all my life it's been on the move, love the challenges the life throws at me, always ready for a fight and learning!">
+          As a person
+        </button>
+
+        <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popunder" title="Professional Life" data-bs-placement="right"
+          data-bs-content="I have 3 years worth of experience of SW QA, with Agile methologies and experience with White, Grey and Black box testing techniques. Excited to learn Web Development!!">
+          As a professional
+        </button>
 
       </div>
-
     </div>
     <!-- Add Button to copy developer's mail, and add Github, LinkedIn and Whatsapp link -->
     <div id="Contact_Me">
+      <h2>Contact Me</h2>
       <div class="container-fluid">
-
+        <h3>Hey you! Send me an Email and let's chat up!</h3>
+        <p>Email: mikeanjel23@gmail.com <button type="button" class="btn btn-sm btn-info" name="button" onclick="copy('mikeanjel23@gmail.com')">Copy to Clipboard</button></p>
+        <span> <a href="https://github.com/MikeAngel2"><i class="fa-brands fa-github-square"></i></a></span>
+        <span> <a href="https://www.linkedin.com/in/mikeruiz1524/"><i class="fa-brands fa-linkedin"></i></a></span>
+        <span> <a href="#"><i class="fa-brands fa-whatsapp-square"></i></a></span>
       </div>
 
-    </div>
+      <script>
+        function copy(TextToCopy) {
+          var TempText = document.createElement("input");
+          TempText.value = TextToCopy;
+          document.body.appendChild(TempText);
+          TempText.select();
 
+          document.execCommand("copy");
+          document.body.removeChild(TempText);
+
+          alert("Copied the text: " + TempText.value);
+        }
+      </script>
+
+    </div>
 
   </main>
 </body>
