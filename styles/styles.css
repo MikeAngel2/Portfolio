@@ -51,7 +51,7 @@ p{
 /* Quick Intro section */
 
 #Quick_Intro{
-  padding-top: 10rem;
+  /* padding-top: 10rem; */
 }
 
 .button_Quick_Intro:hover{
@@ -62,6 +62,7 @@ p{
 /* Skills section */
 
 #Skills{
+  padding-top: 20px;
   background-color: #fff;
 }
 
@@ -75,7 +76,18 @@ p{
 }
 
 #Experience_Accordion > .accordion-item{
-  background-color: #D4D4B6;
+  background-color: #FFF;
+}
+
+.badge{
+  visibility: hidden;
+
+}
+
+.accordion-button:focus .badge{
+  background-color: #FD9E93;
+  visibility: visible;
+  margin:0 0 0 10px;
 }
 
 .accordion-button:hover{
@@ -85,11 +97,24 @@ p{
 /* Projects section */
 
 #Projects{
+  padding-top: 20px;
   background-color: #fff;
 }
 
 #Projects > .btn{
   padding: 10px;
+}
+
+.b-code{
+  margin-left: 10px;
+}
+
+.b-live{
+  margin-right: 10px;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon{
+  background-color: #000;
 }
 
 /* Education section */
@@ -130,16 +155,23 @@ position: absolute;
   padding-right: 30px;
   width: 30%;
   height: 30%;
-  border-radius: 50%;
+
 }
 
 .fa-brands{
-  width: 5%;
-  transform: scale3d(3, 3, 3);
+  /* width: 20%; */
+  font-size: 30px;
   padding: 20px 20px 0 0;
   color:#000;
 }
 
 .fa-brands:hover{
   color: #FFF;
+}
+
+/* Footer section */
+
+#Footer{
+background-color: #28242c;
+color: #fff;
 }

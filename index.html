@@ -21,6 +21,8 @@
   <link rel="stylesheet" href="styles/styles.css">
 
   <!-- Javascript section -->
+
+  <!-- Enable all PopOvers -->
   <script>
     document.addEventListener("DOMContentLoaded", function() {
       var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popunder"]'))
@@ -85,7 +87,7 @@
         <p>Hi everyone that can see my page! I hope that you can find my page
           as readable as i do.</p>
         <p><a href="images/Miguel_Ruiz_CV.pdf" download><button type="button" class="btn btn-dark button_Quick_Intro" href="images/Miguel_Ruiz_CV.pdf" download="Miguel_Ruiz_CV">Download CV</button></a>
-        <a href="#Contact_Me"><button type="button" class="btn btn-dark button_Quick_Intro">Contact me</button></a>
+          <a href="#Contact_Me"><button type="button" class="btn btn-dark button_Quick_Intro">Contact me</button></a>
         </p>
       </div>
 
@@ -128,12 +130,11 @@
         <div class="accordion" id="Experience_Accordion">
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingOne">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                QR Web Page <span class="badge badge-secondary">Current</span>
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" onclick="">
+                QR Web Page <span class="badge badge-secondary" aria-hidden="true">Current</span>
+              </button>
             </h2>
-            </button>
-            </h2>
-            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#Experience_Accordion">
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#Experience_Accordion">
               <div class="accordion-body">
                 <p>Created a simple <strong>QR Code webpage</strong>, using the website FrontEnd Mentor, where it simulates real client requirements.</p>
               </div>
@@ -143,8 +144,7 @@
             <h2 class="accordion-header" id="headingTwo">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                 TinDog <span class="badge badge-secondary">Current</span>
-            </h2>
-            </button>
+              </button>
             </h2>
             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#Experience_Accordion">
               <div class="accordion-body">
@@ -156,8 +156,7 @@
             <h2 class="accordion-header" id="headingThree">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                 CV webpage (Beta) <span class="badge badge-secondary">Current</span>
-            </h2>
-            </button>
+              </button>
             </h2>
             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#Experience_Accordion">
               <div class="accordion-body">
@@ -169,13 +168,15 @@
             <h2 class="accordion-header" id="headingFour">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                 Software Quality Assurance <span class="badge badge-secondary">Current</span>
-            </h2>
-            </button>
+              </button>
             </h2>
             <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#Experience_Accordion">
               <div class="accordion-body">
                 <p>Not a project, but, developed most of my experience and knowledge about Software and their methodologies.</p>
               </div>
+              <script>
+
+              </script>
             </div>
           </div>
         </div>
@@ -198,8 +199,8 @@
                 </a></p>
               <em>FrontEnd Mentor Challenge</em>
               <p>Simple webpage, from FrontEnd Mentor, where meeting requirements is a must. Only HTML and CSS applied</p>
-              <p><a href="https://mikeangel2.github.io/Challenges/"><button type="button" class="btn btn-success btn-sm">Live Site</button></a><a href="https://github.com/MikeAngel2/Challenges"><button type="button"
-                    class="btn btn-warning btn-sm">Code</button></a> </p>
+              <p><a href="https://mikeangel2.github.io/Challenges/"><button type="button" class="btn btn-success btn-sm b-live">Live Site</button></a><a href="https://github.com/MikeAngel2/Challenges"><button type="button"
+                    class="btn btn-warning btn-sm b-code">Code</button></a> </p>
             </div>
 
             <div class="carousel-item">
@@ -209,8 +210,8 @@
                 </a></p>
               <em>Udemy Challenge (Not a real app!!)</em>
               <p>Udemy Challenge website, used knowledge taught during sessions. Bootstrap, CSS and HTML applied here</p>
-              <p><a href="https://mikeangel2.github.io/TinDog/"><button type="button" class="btn btn-success btn-sm">Live Site</button></a><a href="https://github.com/MikeAngel2/TinDog"><button type="button"
-                    class="btn btn-warning btn-sm">Code</button></a> </p>
+              <p><a href="https://mikeangel2.github.io/TinDog/"><button type="button" class="btn btn-success btn-sm b-live">Live Site</button></a><a href="https://github.com/MikeAngel2/TinDog"><button type="button"
+                    class="btn btn-warning btn-sm b-code">Code</button></a> </p>
             </div>
 
             <div class="carousel-item">
@@ -218,8 +219,8 @@
               <p><a href="https://mikeangel2.github.io/CV/"><img src="images/CV_Beta.png" alt="CV" width="700px" height="700px"></a></p>
               <em>1st independent project</em>
               <p>First CV designed by me, using everything learned so far (HTML, CSS, Bootstrap and basic Javascript)</p>
-              <p><a href="https://mikeangel2.github.io/CV/"><button type="button" class="btn btn-success btn-sm">Live Site</button></a><a href="https://github.com/MikeAngel2/CV/tree/master"><button type="button"
-                    class="btn btn-warning btn-sm">Code</button></a> </p>
+              <p><a href="https://mikeangel2.github.io/CV/"><button type="button" class="btn btn-success btn-sm b-live">Live Site</button></a><a href="https://github.com/MikeAngel2/CV/tree/master"><button type="button"
+                    class="btn btn-warning btn-sm b-code">Code</button></a> </p>
             </div>
 
           </div>
@@ -308,9 +309,10 @@
         <p>Email: mikeanjel23@gmail.com <button type="button" class="btn btn-sm btn-info" name="button" onclick="copy('mikeanjel23@gmail.com')">Copy to Clipboard</button></p>
         <span> <a href="https://github.com/MikeAngel2"><i class="fa-brands fa-github-square"></i></a></span>
         <span> <a href="https://www.linkedin.com/in/mikeruiz1524/"><i class="fa-brands fa-linkedin"></i></a></span>
-        <span> <a href="#"><i class="fa-brands fa-whatsapp-square"></i></a></span>
+        <span> <a href="https://api.whatsapp.com/send/?phone=526142410189&Hi%21+Leave+a+message+and+i%27ll+contact+you+shortly%21 text"><i class="fa-brands fa-whatsapp-square"></i></a></span>
       </div>
 
+      <!-- Copy text to clipboard function -->
       <script>
         function copy(TextToCopy) {
           var TempText = document.createElement("input");
@@ -335,11 +337,34 @@
 <footer>
 
   <div id="Footer">
-    <div class="container-fluid">
 
+    <div class="container-xl">
+      <p>Credits</p>
+      <p> <em> <strong>Mentor</strong> Erick Ponce , <strong>Designer</strong> Elizabeth Sandoval, <strong>Developer</strong> Miguel Ruiz </em> </p>
     </div>
 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-xl nav-bar">
+        <a class="navbar-brand ms-auto" href="#">Mike's Portfolio</a>
+        <div class="Nav-Bar">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBottom" aria-controls="navbarBottom" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" style="margin-right: 500px;" id="navbarBottom">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#Quick_Intro" aria-current="page">Top Of Page</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+
+
   </div>
+
 
 </footer>
 
