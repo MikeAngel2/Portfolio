@@ -2,11 +2,11 @@
 
 body{
   text-align: center;
-  background-color: #D0D0D0 ;
 }
 
 h1, h2, h3, h4, h5{
   font-family: 'Montserrat', sans-serif;
+  color: #fff;
 }
 
 h1{
@@ -23,15 +23,18 @@ h3{
 }
 
 hr{
-  width: 20%;
-  border: none;
-  border-top: 20px dotted #FF7F50;
-  background: none;
+  color: #FFF;
 }
 
 p{
   padding: 10px 0 0 0;
 }
+
+ul{
+  list-style: none;
+}
+
+
 
 .container-fluid{
   padding: 3% 15% 7%;
@@ -52,6 +55,7 @@ p{
 
 #Quick_Intro{
   /* padding-top: 10rem; */
+  color: #fff;
 }
 
 .button_Quick_Intro:hover{
@@ -63,25 +67,40 @@ p{
 
 #Skills{
   padding-top: 20px;
-  background-color: #fff;
+  color: #fff;
 }
 
 .skills-grid{
-  border: 0.5px solid #000;
+  border: 0.5px solid #FFF;
 }
 
+ .Front::before{
+  color: #EE6969;
+  content: '🠒';
+}
+
+.Back::before{
+  color: #31C0EF;
+  content: '🠒';
+}
+
+.Languages::before{
+  color: #62F38F;
+  content: '🠒';
+}
 /* Experience Section */
 #Experience{
   padding-top: 20px;
+  color: #fff;
 }
 
-#Experience_Accordion > .accordion-item{
-  background-color: #FFF;
+
+.accordion-toggle.collapsed {
+  background-color: green;
 }
 
 .badge{
   visibility: hidden;
-
 }
 
 .accordion-button:focus .badge{
@@ -98,7 +117,7 @@ p{
 
 #Projects{
   padding-top: 20px;
-  background-color: #fff;
+  color: #fff;
 }
 
 #Projects > .btn{
@@ -123,10 +142,10 @@ li{
   margin: 0 0 3px 0;
 }
 
-.list-group-item-action, .list-group-item{
-  background-color: #D0D0D0;
+.list-group-item{
   border: none;
-
+  color: #fff;
+  background-color: #212529;
 }
 
 .Education_list{
@@ -147,8 +166,18 @@ position: absolute;
     }
 }
 
+.Education_Projects::-webkit-scrollbar {
+  width:10px;
+  background-color: #212529;
+}
+
+.Education_Projects:-webkit-scrollbar-thumb{
+    background: #FFF;
+    border-radius:5px;
+  }
+
 #About_Me{
-  background-color: #FFF;
+  color: #fff;
 }
 
 .image-profile{
@@ -162,16 +191,16 @@ position: absolute;
   /* width: 20%; */
   font-size: 30px;
   padding: 20px 20px 0 0;
-  color:#000;
+  color:#FFF;
 }
 
-.fa-brands:hover{
-  color: #FFF;
-}
 
+/* Contact me section */
+#Contact_Me{
+  color: #fff;
+}
 /* Footer section */
 
 #Footer{
-background-color: #28242c;
 color: #fff;
 }
