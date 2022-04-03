@@ -1,12 +1,21 @@
 /* General Styles */
 
-body{
+.dark-mode{
   text-align: center;
+  background-color: #212529;
+  color: #fff;
+  transition: 0.3s;
 }
 
-h1, h2, h3, h4, h5{
+.light-mode{
+  text-align: center;
+  background-color: #FFF;
+  color: #000 ;
+  transition: 0.3s;
+}
+
+h1, h2, h3, h4, h5, hr{
   font-family: 'Montserrat', sans-serif;
-  color: #fff;
 }
 
 h1{
@@ -22,10 +31,6 @@ h3{
   font-weight: 300;
 }
 
-hr{
-  color: #FFF;
-}
-
 p{
   padding: 10px 0 0 0;
 }
@@ -34,7 +39,12 @@ ul{
   list-style: none;
 }
 
+/* ID and class general Styles */
 
+#Quick_Intro, #Skills, #Experience, #Projects, .list-group-item,
+#About_Me, #Contact_Me, #Footer, .fa-brands{
+
+}
 
 .container-fluid{
   padding: 3% 15% 7%;
@@ -45,6 +55,15 @@ ul{
   color: #000;
 }
 
+.Btn-Li{
+  background-color: #fff;
+  color: #000;
+}
+
+.Btn-Da{
+  background-color: #000;
+  color: #FFF;
+}
 /* Header Section */
 
 .navbar-nav > li{
@@ -53,10 +72,6 @@ ul{
 
 /* Quick Intro section */
 
-#Quick_Intro{
-  /* padding-top: 10rem; */
-  color: #fff;
-}
 
 .button_Quick_Intro:hover{
   background-color: #fff;
@@ -67,11 +82,14 @@ ul{
 
 #Skills{
   padding-top: 20px;
-  color: #fff;
 }
 
-.skills-grid{
+.skills-grid-dark{
   border: 0.5px solid #FFF;
+}
+
+.skills-grid-light{
+  border: 0.5px solid #000;
 }
 
  .Front::before{
@@ -91,6 +109,10 @@ ul{
 /* Experience Section */
 #Experience{
   padding-top: 20px;
+}
+
+.accordion-item{
+  background-color: #212529;
   color: #fff;
 }
 
@@ -117,7 +139,6 @@ ul{
 
 #Projects{
   padding-top: 20px;
-  color: #fff;
 }
 
 #Projects > .btn{
@@ -144,8 +165,13 @@ li{
 
 .list-group-item{
   border: none;
-  color: #fff;
   background-color: #212529;
+  color: #fff;
+}
+
+.dark_list{
+  background-color: #fff;
+  color: #000;
 }
 
 .Education_list{
@@ -172,13 +198,10 @@ position: absolute;
 }
 
 .Education_Projects:-webkit-scrollbar-thumb{
-    background: #FFF;
+    color: #FFF;
     border-radius:5px;
   }
 
-#About_Me{
-  color: #fff;
-}
 
 .image-profile{
   padding-right: 30px;
@@ -191,16 +214,15 @@ position: absolute;
   /* width: 20%; */
   font-size: 30px;
   padding: 20px 20px 0 0;
-  color:#FFF;
 }
 
 
 /* Contact me section */
 #Contact_Me{
-  color: #fff;
+
 }
+
 /* Footer section */
 
 #Footer{
-color: #fff;
 }

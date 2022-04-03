@@ -21,21 +21,11 @@
   <link rel="stylesheet" href="styles/styles.css">
 
   <!-- Javascript section -->
-
-  <!-- Enable all PopOvers -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popunder"]'))
-      var popoverList = popoverTriggerList.map(function(popoverTriggerEl) {
-        return new bootstrap.Popover(popoverTriggerEl)
-      })
-    });
-  </script>
-
+  <script src="index.js" charset="utf-8"></script>
 
 </head>
 
-<body class="bg-dark">
+<body class="dark-mode">
   <main>
     <!-- Add a NavBar that can go to all the sections of the web page -->
     <div id="Header">
@@ -71,6 +61,8 @@
                   <a class="nav-link" href="#Contact_Me">Contact Me</a>
                 </li>
               </ul>
+              <button class="btn Btn-Li" type="submit" onclick="change_mode()">Change View</button>
+
             </div>
 
           </div>
@@ -97,21 +89,21 @@
       <h2>Web Development Skills</h2>
       <div class="container-fluid">
         <div class="row">
-          <div class="col-xxl-4 col-lg-6 col-sm-12 skills-grid">
+          <div class="col-xxl-4 col-lg-6 col-sm-12 skills-grid-dark">
             <ul class="ul_Front">
               <p style="color:#EE6969">FrontEnd</p> <hr>
               <li class="Front">HTML</li>
               <li class="Front">CSS</li>
             </ul>
           </div>
-          <div class="col-xxl-4 col-lg-6 col-sm-12 skills-grid">
+          <div class="col-xxl-4 col-lg-6 col-sm-12 skills-grid-dark">
             <ul>
               <p style="color:#31C0EF">Backend</p> <hr>
               <li class="Back">TBA</li>
               <li class="Back">TBA</li>
             </ul>
           </div>
-          <div class="col-xxl-4 col-lg-12 col-sm-12 skills-grid">
+          <div class="col-xxl-4 col-lg-12 col-sm-12 skills-grid-dark">
             <ul>
               <p style="color:#62F38F"> Languages/Libraries</p> <hr>
               <li class="Languages">Javascript</li>
@@ -128,43 +120,43 @@
       <h2>Projects and Experience</h2>
       <div class="container-fluid">
         <div class="accordion" id="Experience_Accordion">
-          <div class="accordion-item bg-dark">
+          <div class="accordion-item">
             <h2 class="accordion-header" id="headingOne">
-              <button class="accordion-button" type="button" class="btn btn-dark"  data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" onclick="">
+              <button class="accordion-button collapsed" type="button" class="btn btn-dark"  data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" onclick="">
                 QR Web Page <span class="badge badge-secondary" aria-hidden="true">Current</span>
               </button>
             </h2>
             <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#Experience_Accordion">
-              <div class="accordion-body bg-dark">
+              <div class="accordion-body">
                 <p>Created a simple <strong>QR Code webpage</strong>, using the website FrontEnd Mentor, where it simulates real client requirements.</p>
               </div>
             </div>
           </div>
-          <div class="accordion-item bg-dark">
+          <div class="accordion-item">
             <h2 class="accordion-header" id="headingTwo">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                 TinDog <span class="badge badge-secondary">Current</span>
               </button>
             </h2>
             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#Experience_Accordion">
-              <div class="accordion-body bg-dark">
+              <div class="accordion-body">
                 <p>Udemy website challenge, where it tested knowledge using HTML and CSS and a bit of Bootstrap.</p>
               </div>
             </div>
           </div>
-          <div class="accordion-item bg-dark">
+          <div class="accordion-item">
             <h2 class="accordion-header" id="headingThree">
               <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                 CV webpage (Beta) <span class="badge badge-secondary">Current</span>
               </button>
             </h2>
             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#Experience_Accordion">
-              <div class="accordion-body bg-dark">
+              <div class="accordion-body">
                 <p>Webpage created from myself, applying every skill obtained thus far. Has info about myself and also some of my other skills obtained in my professional life.</p>
               </div>
             </div>
           </div>
-          <div class="accordion-item bg-dark">
+          <div class="accordion-item">
             <h2 class="accordion-header" id="headingFour">
               <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                 Software Quality Assurance <span class="badge badge-secondary">Current</span>
@@ -174,9 +166,7 @@
               <div class="accordion-body bg-dark">
                 <p>Not a project, but, developed most of my experience and knowledge about Software and their methodologies.</p>
               </div>
-              <script>
 
-              </script>
             </div>
           </div>
         </div>
@@ -302,26 +292,13 @@
       <div class="container-fluid">
         <h2>Contact Me</h2>
         <h3>Hey you! Send me an Email and let's chat up!</h3>
-        <p>Email: mikeanjel23@gmail.com <button type="button" class="btn btn-sm btn-info" name="button" onclick="copy('mikeanjel23@gmail.com')">Copy to Clipboard</button></p>
+        <p>Email: mikeanjel23@gmail.com <button type="button" class="btn btn-sm btn-outline-info" name="button" onclick="copy('mikeanjel23@gmail.com')">Copy to Clipboard</button></p>
         <span> <a href="https://github.com/MikeAngel2"><i class="fa-brands fa-github-square"></i></a></span>
         <span> <a href="https://www.linkedin.com/in/mikeruiz1524/"><i class="fa-brands fa-linkedin"></i></a></span>
         <span> <a href="https://api.whatsapp.com/send/?phone=526142410189&Hi%21+Leave+a+message+and+i%27ll+contact+you+shortly%21 text"><i class="fa-brands fa-whatsapp-square"></i></a></span>
       </div>
 
-      <!-- Copy text to clipboard function -->
-      <script>
-        function copy(TextToCopy) {
-          var TempText = document.createElement("input");
-          TempText.value = TextToCopy;
-          document.body.appendChild(TempText);
-          TempText.select();
 
-          document.execCommand("copy");
-          document.body.removeChild(TempText);
-
-          alert("Copied the text: " + TempText.value);
-        }
-      </script>
 
     </div>
 
@@ -334,7 +311,7 @@
 
   <div id="Footer">
 
-    <div class="container-xl bg-dark">
+    <div class="container-xl">
       <p>Credits</p>
       <p> <em> <strong>Mentor</strong> Erick Ponce , <strong>Designer</strong> Elizabeth Sandoval, <strong>Developer</strong> Miguel Ruiz </em> </p>
     </div>
