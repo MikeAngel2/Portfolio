@@ -1,4 +1,3 @@
-
 // Enable all PopOvers
 document.addEventListener("DOMContentLoaded", function() {
   var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popunder"]'))
